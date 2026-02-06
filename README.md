@@ -1,5 +1,5 @@
 # Project-ADVANCE-2026
-## Integrating IT into Daily Life for Strategic Growth / ITを日常に組み込み、活用していく道
+## Integrating IT into Daily Life for Strategic Growth / ITを日常に組み込み活用していく道
 
 ---
 
