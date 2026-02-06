@@ -6,7 +6,7 @@ from datetime import datetime
 
 def main():
     # --- 1. 設定（APIの宛先） ---
-    key = "46757fbd0d6c2147a57bd6057906d971"
+    key = "DUMMY_KEY_FOR_GITHUB"
     city, country = "Tokyo", "JP"
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={city},{country}&appid={key}&lang=ja&units=metric"
 
