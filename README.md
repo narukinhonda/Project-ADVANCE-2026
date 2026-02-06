@@ -49,5 +49,5 @@ Pythonを用いて外部APIから情報を取得し、実務で活用できる�
 ![Weather Report Graph](./weather_20260202.png)
 
 ### 💡 Career Connection / キャリアへの繋がり
-Through this project, I mastered the fundamental cycle of "Data Retrieval → Analysis (JSON) → Decision-support Visualization." This process is essential for AWS cost optimization and FinOps analysis.
-このプロジェクトを通じて、「外部データの取得 → 構造の解析(JSON) → 意思決定のための可視化」という、FinOpsやAWSエンジニアに必須のデータ処理サイクルを習得しました。
+Through this project, I mastered the fundamental cycle of **"Data Retrieval → Analysis (JSON) → Decision-support Visualization."** This process is essential for AWS cost optimization and FinOps analysis.
+このプロジェクトを通じて、**「外部データの取得 → 構造の解析(JSON) → 意思決定のための可視化」** という、FinOpsやAWSエンジニアに必須のデータ処理サイクルを習得しました。
