@@ -2,12 +2,60 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ナルキンの基地本部</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ナルキン | 学習記録とポートフォリオ</title>
+    <style>
+        body { font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; line-height: 1.6; color: #444; max-width: 800px; margin: 0 auto; padding: 30px 20px; background-color: #fafafa; }
+        header { border-bottom: 2px solid #555; padding-bottom: 15px; margin-bottom: 30px; }
+        h1 { margin: 0; color: #222; font-size: 2rem; }
+        .tagline { font-size: 1.1rem; color: #777; margin-top: 5px; }
+        section { background: #fff; padding: 25px; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 20px; }
+        h2 { font-size: 1.3rem; border-left: 4px solid #555; padding-left: 12px; margin-top: 0; color: #222; }
+        p { margin-bottom: 15px; }
+        .skill-tag { display: inline-block; background: #f0f0f0; color: #444; padding: 3px 10px; border-radius: 4px; font-size: 0.85rem; margin: 0 4px 6px 0; border: 1px solid #ccc; }
+        footer { text-align: center; color: #888; font-size: 0.8rem; margin-top: 40px; }
+    </style>
 </head>
 <body>
-    <h1>自動配送ライン開通！</h1>
-    <h2>やっとLINEが開通しました！</h2>
-    <p>これは構築したGitHub Actionsによって、自動でS3へ届けられたページです。</p>
-    <p>ここを「AI動画工場」の司令塔にする予定です</p>
+
+<header>
+    <h1>ナルキン</h1>
+    <p class="tagline">私のデータ分析・クラウド学習の記録</p>
+</header>
+
+<section id="about">
+    <h2>自己紹介</h2>
+    <p>経済や心理学など様々な分野に関心を持ち、現在はその知見をIT技術（PythonやAWS）と掛け合わせるべく独学を進めています。単にツールを覚えるだけでなく、「実務でどう役立てるか」を意識しながら手を動かすことをモットーにしています。</p>
+</section>
+
+<section id="status">
+    <h2>現在の学習状況</h2>
+    <p>現在は、インフラの基礎としてAWS S3を利用したホスティングや、GitHub Actionsを用いた自動化の仕組みを構築し、運用しています。今後はPythonを用いたデータ集計・可視化のプロジェクトを公開していく予定です。</p>
+    <div>
+        <span class="skill-tag">AWS (S3) 初学者</span>
+        <span class="skill-tag">GitHub Actions (自動化)</span>
+        <span class="skill-tag">Python (学習中)</span>
+        <span class="skill-tag">マクロ経済・金融データ</span>
+    </div>
+</section>
+
+<section id="works">
+    <h2>取り組んだこと</h2>
+    <ul>
+        <li>
+            <strong>自動更新ポートフォリオの構築</strong><br>
+            VS Codeでの編集からS3への反映まで、GitHub Actionsで自動化する環境を自力でセットアップしました。
+        </li>
+        <li>
+            <strong>金融データの可視化（着手中）</strong><br>
+            e-Stat等の公開データをPythonで処理し、レポートとしてまとめる作業を進めています。
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2026 ナルキン. 構築・運用: AWS S3 & GitHub Actions</p>
+</footer>
+
 </body>
 </html>
