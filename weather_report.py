@@ -1,12 +1,20 @@
-
+import os
+from dotenv import load_dotenv
 import requests
+
+# （PCの）.envファイルから「OPENWEATHER_API_KEY = 467..」を読んでメモリへ一時保存、そのときメモリに「OPENWEATHER_API_KEY」という名前で「467..」を保存する
+load_dotenv()
+
+# ６行目で保存したメモの中からAPIキーに「OPENWEATHER_API_KEY」という名前のデータ（＝ 467..）を取り出す→９行目(API_KEYに中身だけ渡す)→23行目へ、os.getenvはimport osから
+API_KEY = os.getenv("OPENWEATHER_API_KEY")
+
 import json
 import matplotlib.pyplot as plt
 from datetime import datetime
 
 def main():
     # --- 1. 設定（APIの宛先） ---
-    key = "DUMMY_KEY_FOR_GITHUB"
+    key = API_KEY
     city, country = "Tokyo", "JP"
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={city},{country}&appid={key}&lang=ja&units=metric"
 
