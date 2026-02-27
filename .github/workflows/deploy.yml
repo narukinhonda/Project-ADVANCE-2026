@@ -1,0 +1,25 @@
+name: Deploy to S3
+
+on:
+  push:
+    branches:
+      - main  # 1. mainブランチに保存された時に動く
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 2. 最新のLinuxマシンを借りて作業する
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4  # 3. GitHubから最新のコードを取り出す
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4  # 4. AWSの「合鍵」を取り出す
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-1
+
+      - name: Deploy to S3
+        run: |
+          # 5. S3バケットへ中身をまるごとコピーする
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET }} --exclude ".git/*" --exclude ".github/*"
