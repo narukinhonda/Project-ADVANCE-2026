@@ -14,6 +14,9 @@
         p { margin-bottom: 15px; }
         .skill-tag { display: inline-block; background: #f0f0f0; color: #444; padding: 3px 10px; border-radius: 4px; font-size: 0.85rem; margin: 0 4px 6px 0; border: 1px solid #ccc; }
         footer { text-align: center; color: #888; font-size: 0.8rem; margin-top: 40px; }
+        /* 画像を並べるためのスタイル */
+        .image-container { display: flex; flex-direction: column; gap: 20px; margin: 20px 0; }
+        .image-container img { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; }
     </style>
 </head>
 <body>
@@ -41,7 +44,12 @@
 
 <section id="works">
     <h2>取り組んだこと</h2>
-    <img src="weather_20260215.png" alt="データ分析のサンプル" style="max-width: 100%; height: auto; border: 1px solid #ddd; margin-top: 10px;">
+    
+    <div class="image-container">
+        <img src="weather_20260215.png" alt="データ分析のサンプル1">
+        <img src="weather_20260219.png" alt="データ分析のサンプル2">
+    </div>
+
     <ul>
         <li>
             <strong>自動更新ポートフォリオの構築</strong><br>
