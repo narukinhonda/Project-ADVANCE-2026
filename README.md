@@ -1,3 +1,33 @@
+# Project-ADVANCE-2026：AWSコスト監視システム（JPY換算版）
+
+## 📌 プロジェクトの概要
+このプロジェクトは、AWS（Amazon Web Services）の利用料金を自動的に取得し、日本円（JPY）に換算して表示するツールです。
+「クラウドエンジニアとしての第一歩」として、AWSの権限管理（IAM）とプログラム（Python）の連携を実戦形式で構築しました。
+
+## 🏗️ システム構成図
+本プロジェクトでは、セキュリティを最優先に考え、人間とロボットの権限を分離しています。
+
+- **司令部 (Local PC)**: `naru-admin` (IAMユーザー) の鍵を使い、コストを取得・確認。
+- **保管庫 (GitHub)**: ソースコードの管理。
+- **配送ロボ (GitHub Actions)**: `github-s3-deployer` (IAMユーザー) が S3 バケットへ自動同期。
+
+## 🛡️ セキュリティと防諜
+- **最小権限の原則**: 配送ロボにはS3の操作権限のみを付与し、基地全体の安全を確保。
+- **機密情報の保護**: `.gitignore` を活用し、AWSの合鍵（Access Keys）が外部に流出しないよう徹底。
+
+## 🚀 主な機能
+- `get_cost.py`: 昨日のAWS利用料金をドルで取得し、指定レートで日本円に変換して表示。
+- `check_aws.py`: 接続テスト用。現在のアカウントIDとUserIdを表示し、正常な通信を確認。
+
+## 💻 使用技術
+- **Language**: Python 3.x
+- **Library**: Boto3 (AWS SDK for Python)
+- **Cloud**: AWS (Cost Explorer, S3, IAM)
+- **CI/CD**: GitHub Actions
+
+
+
+
 # Project-ADVANCE-2026
 ## Integrating IT into Daily Life for Strategic Growth / ITを日常に組み込み活用していく道
 
